@@ -47,6 +47,9 @@ public class Perpustakaan
             while(in.hasNextLine()) {
                 tempData = in.nextLine();
                 dataBuku = tempData.split(";");
+                tempJudul = dataBuku[0];
+                tempPenulis = dataBuku[1];
+                tempHarga = Double.parseDouble(dataBuku[2]);
             }
         } catch (Exception e){
             System.out.println(e.getMessage());
